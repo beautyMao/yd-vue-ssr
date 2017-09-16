@@ -12,7 +12,8 @@ after_script:
 
 //构建完毕自动将代码分发到远程主机
 
-- scp -o StrictHostKeyChecking=no app.js root@47.94.168.174
+- scp -o StrictHostKeyChecking=no app.js root@47.94.168.174:/~/mynode/
+
 
 
 before_install:
