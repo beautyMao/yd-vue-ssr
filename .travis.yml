@@ -10,7 +10,7 @@ after_script:
 
 before_install:
  - openssl aes-256-cbc -K $encrypted_3889bd0df4a7_key -iv $encrypted_3889bd0df4a7_iv
-    -in qxm_key.enc -out qxm_key -d
+-in qxm_key.enc -out qxm_key -d
 
   - mv qxm_key ~/.ssh -f
 
