@@ -26,7 +26,18 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "chromedriver": "^2.32.3",
+    "co": "^4.6.0",
     "gulp-prepack": "0.0.2",
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^4.3.11",
+    "koa-simple-router": "^0.2.0",
+    "koa-swig": "^2.2.1",
+    "lru-cache": "^4.1.1",
+    "natives": "^1.1.0",
+    "nightwatch": "^0.9.16",
+    "nightwatch-html-reporter": "^2.0.2",
+    "selenium-server": "^3.5.3",
+    "selenium-standalone": "^6.9.0",
+    "sigmund": "^1.0.1"
   }
 }
