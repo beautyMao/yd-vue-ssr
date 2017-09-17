@@ -30,6 +30,7 @@
     "co": "^4.6.0",
     "gulp-prepack": "0.0.2",
     "gulp-watch": "^4.3.11",
+    "koa": "^2.3.0",
     "koa-simple-router": "^0.2.0",
     "koa-swig": "^2.2.1",
     "lru-cache": "^4.1.1",
