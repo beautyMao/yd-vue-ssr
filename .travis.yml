@@ -10,7 +10,7 @@ after_script:
 
 //构建完毕自动将代码分发到远程主机
 
-- scp -o StrictHostKeyChecking=no app.js root@47.94.168.174:/~/test/
+- scp -o StrictHostKeyChecking=no ./build/app.js root@47.94.168.174:/~/test/
 
 
 before_install:
