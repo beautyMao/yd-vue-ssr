@@ -1,30 +1,37 @@
 language: node_js
 
-//通过http://lint.travis-ci.org/校验完整性
-
 node_js:
-  - 7.7.1
 
+- 8.4.0
 
 after_script:
 
-//构建完毕自动将代码分发到远程主机
-
-  - scp -o StrictHostKeyChecking=no ./build/app.js root@47.94.168.174:/~/test/
-
+- scp  -o  StrictHostKeyChecking=no ./build/app.js  root@47.94.168.174:/~/test/
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_3889bd0df4a7_key -iv $encrypted_3889bd0df4a7_iv
+ - openssl aes-256-cbc -K $encrypted_3889bd0df4a7_key -iv $encrypted_3889bd0df4a7_iv
     -in qxm_key.enc -out qxm_key -d
 
   - mv qxm_key ~/.ssh -f
 
   - chmod 600 ~/.ssh/qxm_key
 
-# 配置 ssh
+  # 配置 ssh
 
   - eval $(ssh-agent)
 
   - ssh-add ~/.ssh/qxm_key
 
   - cp .travis/ssh_config ~/.ssh/config
+
+
+
+
+
+
+
+
+
+
+
+
